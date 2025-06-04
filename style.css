@@ -1,0 +1,169 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #fdf8f5; /* se puede cambiar este color */
+    background-image: linear-gradient(to top #DFE9F3 0%, #ffffff 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }/* cuenpo de la pagina va los productos y mas*/
+  
+   /* encabezado de la pagina web*/
+  .landing {
+    background-image: url('img/fondo.jpeg'); /* se puede cambiar la imagen*/
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    position: relative;
+  }
+    /* edicion de color e imagen de fondo del encabezado*/
+  .overlay {
+    background-color: #dab3d0(44, 44, 44, 0.4); /*efecto oscurecido */
+    color: rgb(17, 15, 15);
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 41px;
+  }
+  
+  /* edicion de titulo del encabezado*/
+  .overlay h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+  }
+  /* edicion de subtitulo del encabezado*/
+  .subtitulo {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .subtitulo h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #020202
+  
+  }
+  
+  
+  
+  /* bonton ver productos*/
+  .boton {
+    background-color: #d88fc7;
+    color: rgb(10, 3, 3);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  /* barra inicio, producto, contacto*/
+  nav {
+    background-color: #d88fc7;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav ul {
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 0;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #0f0207;
+    font-weight: bold;
+  }
+  /* nuestros*/
+  .productos {
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .producto {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  .producto img {
+    width: 120%;
+    border-radius: 5px;
+  }
+  
+  .boton {
+    background-color: #d88fc7;
+    color: rgb(12, 11, 11);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+  }
+  
+  footer {
+    background-color: #d88fc7;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  
+  
+  .forulario {
+    background-color: #dab3d0;
+    padding: 5px;
+  }
+  
+  
+  
+  .forulario h2{
+    text-align: center;
+  }
+  
+  .formulario-suscripcion {
+    padding: 10px 20px;
+    background-color: #dab3d0;
+    color: rgb(7, 1, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: min(600px);
+    margin: 0 auto;
+  
+  
+  }
+  
+  .campo {
+    margin-bottom: 10px;
+  }
+  
+  .campo label{
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display:block;
+  }
+  
+  .input-text{
+    width: 95%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  
+  .servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  
