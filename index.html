@@ -1,123 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brilla Bonita</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Brilla Bonita</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    
 
-  <div class="landing">
-    <div class="overlay">
-      <header>
-        <h1>✨ Brilla Bonita ✨</h1>
-        <p class="subtitulo">
-          💄 Productos de maquillaje para brillar cada día 
-          Tu belleza,tu vida 💖
-        </p>
-         <a href="#productos" class="boton">Ver Productos</a>
-      </header>
+    <div class="landing">
+      <div class="overlay">
+        <header>
+          <h1>✨ Brilla Bonita ✨</h1>
+          <p class="subtitulo">
+            💄 Productos de maquillaje para brillar cada día 
+            Tu belleza,tu vida 💖
+          </p>
+          <a href="#productos" class="boton">Ver Productos</a>
+        </header>
+      </div>
     </div>
-  </div>
 
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#">  
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#000000"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#mas">Mas vendidos</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+        <a href="./cart.html">  
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-          <path d="M4 7l.867 12.143a2 2 0 0 0 2 1.857h10.276a2 2 0 0 0 2 -1.857l.867 -12.143h-16z" />
-          <path d="M8.5 7c0 -1.653 1.5 -4 3.5 -4s3.5 2.347 3.5 4" />
-          <path d="M9.5 17c.413 .462 1 1 2.5 1s2.5 -.897 2.5 -2s-1 -1.5 -2.5 -2s-2 -1.47 -2 -2c0 -1.104 1 -2 2 -2s1.5 0 2.5 1" />
-          </svg>
+            <path d="M4 7l.867 12.143a2 2 0 0 0 2 1.857h10.276a2 2 0 0 0 2 -1.857l.867 -12.143h-16z" />
+            <path d="M8.5 7c0 -1.653 1.5 -4 3.5 -4s3.5 2.347 3.5 4" />
+            <path d="M9.5 17c.413 .462 1 1 2.5 1s2.5 -.897 2.5 -2s-1 -1.5 -2.5 -2s-2 -1.47 -2 -2c0 -1.104 1 -2 2 -2s1.5 0 2.5 1" />
+            </svg>
+          </a>
+        </li>    
+      </ul>
+    </nav>
+
+    <section class="productos">
+      <div class="subtitulo">
+        <h2>Nuestros Productos</h2> 
+      </div>
+      
+      <div class="servicios">
+      
+        <div class="producto">
+          <div class="descuento">20% Dcto</div>
+          <a href="./Product.html" style="text-decoration: none; color: black;">
+            <img src="img/labial_rojo.jpeg" alt="Labial Rojo"/>
+          </a>
+          <h3>Labial Rojo Intenso</h3>
+          <p>
+            <strong>$4.990</strong>
+            <samp class="precio original">$6.990</samp>
+          </p>
+          <button class="boton">Agregar al carrito</button>
+        </div>
+      
+        <div class="producto">
+          <div class="descuento">15% Dcto.</div>
+          <a href="./Product.html" style="text-decoration: none; color: #000"></a>
+          <img src="img/prymer.jpeg" alt="Primer">
+          </a>
+          <h3>Prymer</h3>
+          <p>
+            <strong>$8.990</strong> <span class="precio-original">$9.990</span>
+          </p>
+          <button class="boton">Agregar al carrito</button>
+        </div>
+      
+        <div class="producto">
+          <a href="./Product.html" style="text-decoration: none; color: #000"></a>
+          <img src="img/maktit.png" alt="Pack">
+          </a>
+          <h3>pack</h3>
+          <p>$5.990</p>
+          <button class="boton">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <a href="./Product.html" style="text-decoration: none; color: #000"></a>
+          <img src="img/base.jpeg" alt="Base Maquillaje">
+          </a>
+          <h3>Base Maquillaje</h3>
+          <p>$5.990</p>
+          <button class="boton">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <div class="descuento">7% Dcto.</div>
+          <a href="./Product.html" style="text-decoration: none; color: #000">
+            <img src="img/sombra_rosa.jpeg" alt="Paleta Rosa"> 
+          </a>
+          <h3>Paleta Rosa</h3>
+          <p>
+            <strong>$4.000</strong> <span class="precio-original">$5.990</span>
+          </p>
+          <button class="boton">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <div class="descuento">20% Dcto.</div>
+          <a href="./Product.html" style="text-decoration: none; color: #000"></a>
+          <img src="img/labial_c.jpeg" alt="Labial Rosa">
+          </a>
+          <h3>Labial C</h3>
+          <p>
+            <strong>$4.990</strong> <span class="precio-original">$5.990</span>
+          </p>
+          <button class="boton">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+          <a href="./Product.html" style="text-decoration: none; color: #000">
+          <img src="img/base.jpeg" alt="Base 2">
+          </a>
+          <h3>Base 2</h3>
+          <p>$5.990</p>
+          <button class="boton">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+          <div class="descuento">20% Dcto.</div>
+          <a href="./Product.html" style="text-decoration: none; color: #000"></a>
+          <img src="img/labila_R.jpeg" alt="Labial R">
+          </a>
+          <h3>Labial R</h3>
+          <strong>$4.990</strong> <span class="precio-original">$5.990</span>
+          <button class="boton">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+    <div class="separador"></div>
+    <section id="mas" class="destacado">
+      <h2>⭐ Producto Estrella</h2>
+      <div class="producto">
+        <a href="./Product.html" style="text-decoration: none; color: #000">
+          <img src="img/labial_rojo.jpeg" alt="Labial Estrella" />
         </a>
-      </li>    
-    </ul>
-  </nav>
+        <h3>Labial Rojo Glamour</h3>
+        <p>
+          <span class="precio-original">$6.990</span> <strong>$4.990</strong>
+        </p>
+        <button class="boton">Lo quiero</button>
+      </div>
+    </section>
+    <div class="separador"></div>
 
-  <section class="productos">
-    <div class="subtitulo">
-      <h2>Nuestros Productos</h2> 
-    </div>
-    
-    <div class="servicios">
-    
-      <div class="producto">
-        <img src="img/labial_rojo.jpeg" alt="Labial Rojo">
-        <h3>Labial Rojo Intenso</h3>
-        <p>$4.990</p>
-        <button class="boton">Agregar al carrito</button>
+    <section class="testimonios">
+      <h2>Lo que dicen nuestras clientas</h2>
+      <div class="contenedor-testimonios">
+        <div class="reseña">
+          <p>
+            "El labial rojo es mi favorito. ¡Dura todo el día y no se corre!"
+          </p>
+          <span>– Camila, Santiago</span>
+        </div>
+        <div class="reseña">
+          <p>
+            "Recibí el pedido rápido y bien embalado. ¡Muy feliz con la compra!"
+          </p>
+          <span>– Laura, Concepción</span>
+        </div>
       </div>
-    
-      <div class="producto">
-        <img src="img/prymer.jpeg" alt="Primer">
-        <h3>Prymer</h3>
-        <p>$9.990</p>
-        <button class="boton">Agregar al carrito</button>
-      </div>
-    
-      <div class="producto">
-        <img src="img/maktit.png" alt="Pack">
-        <h3>pack</h3>
-        <p>$5.990</p>
-        <button class="boton">Agregar al carrito</button>
-      </div>
+    </section>
 
-      <div class="producto">
-        <img src="img/base.jpeg" alt="Base Maquillaje">
-        <h3>Base Maquillaje</h3>
-        <p>$5.990</p>
-        <button class="boton">Agregar al carrito</button>
-      </div>
-
-      <div class="producto">
-        <img src="img/sombra_rosa.jpeg" alt="Paleta Rosa">
-        <h3>Paleta Rosa</h3>
-        <p>$5.990</p>
-        <button class="boton">Agregar al carrito</button>
-      </div>
-
-      <div class="producto">
-        <img src="img/labial_c.jpeg" alt="Labial Rosa">
-        <h3>Labial C</h3>
-        <p>$5.990</p>
-        <button class="boton">Agregar al carrito</button>
-      </div>
-      
-      <div class="producto">
-        <img src="img/base.jpeg" alt="Base 2">
-        <h3>Base 2</h3>
-        <p>$5.990</p>
-        <button class="boton">Agregar al carrito</button>
-      </div>
-      
-      <div class="producto">
-        <img src="img/labila_R.jpeg" alt="Labial R">
-        <h3>Labial R</h3>
-        <p>$5.990</p>
-        <button class="boton">Agregar al carrito</button>
-      </div>
-
-    </div>
-    
-  </section>
-
-  <section>
+  <section id="contacto">
     <div class="forulario">
       <h2>Contacto</h2>
-      <form class="formulario-suscripcion">
+      <form class="formulario-suscripcion" action="./contact-done.html">
 
           <fieldset>
               <legend>Recibe nuestras novedades y ofertas especiales llenando todos los campos</legend>
