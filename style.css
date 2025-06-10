@@ -9,15 +9,17 @@ body, html {
   
    /* encabezado de la pagina web*/
   .landing {
-    background-image: url('img/fondo.jpeg'); /* se puede cambiar la imagen*/
+    background-image: url('img/def.png'); /* se puede cambiar la imagen*/
     background-size: cover;
     background-position: center;
     height: 85vh;
     position: relative;
+    overflow: hidden;
+    
   }
     /* edicion de color e imagen de fondo del encabezado*/
   .overlay {
-    background-color: #dab3d0(44, 44, 44, 0.4); /*efecto oscurecido */
+    background-color: rgba(168, 105, 160, 0.5); /*efecto oscurecido */
     color: rgb(17, 15, 15);
     height: 85%;
     display: flex;
