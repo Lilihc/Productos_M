@@ -124,22 +124,12 @@ body, html {
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
-/*pie de página*/
-  footer {
-    background-color: #d88fc7;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  
-  
+
   .forulario {
     background-color: #dab3d0;
     padding: 5px;
   }
-  
-  
-  
+
   .forulario h2{
     text-align: center;
   }
@@ -283,3 +273,11 @@ body, html {
   font-size: 0.9em;
   margin-left: 5px;
 }
+
+/*pie de página*/
+footer {
+  background-color: #d88fc7;
+  text-align: center;
+  padding: 15px;
+}
+  

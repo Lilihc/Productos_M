@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5efec;
+  }
+  
+  header {
+    background-color: #d88fc7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #d88fc7;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 0;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #0f0207;
+    font-weight: bold;
+  }
+  
+  .producto-individual {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .imagen {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .info {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .info h1 {
+    margin-top: 0;
+    color: #842e6b;
+  }
+  
+  .precio {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #000;
+  }
+  
+  .precio-original {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9em;
+    margin-left: 10px;
+  }
+  
+  .descuento {
+    background-color: #e53985;
+    color: white;
+    padding: 5px 12px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .boton {
+    background-color: #d88fc7;
+    color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .boton:hover {
+    background-color: #c069b3;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d88fc7;
+    color: #000;
+    margin-top: 50px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .producto-individual {
+      flex-direction: column;
+    }
+  }
