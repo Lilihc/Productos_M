@@ -5,7 +5,7 @@ body, html {
     background-image: linear-gradient(to top #DFE9F3 0%, #ffffff 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
-  }/* cuenpo de la pagina va los productos y mas*/
+  }/* cuerpo de la pagina va los productos y mas*/
   
    /* encabezado de la pagina web*/
   .landing {
@@ -83,20 +83,29 @@ body, html {
     padding: 40px;
     text-align: left;
   }
-  
+
+  /* alineacion de los productos en bloque*/
   .producto {
     display: inline-block;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
     width: 200px;
+    position: relative;
   }
+
+  /*pseudoclase,(efecto de la imagen al poner el mause encima)*/
+.producto:hover {
+  transform: scale(1.05);/*se agranda el elemento un 5% efecto zoom*/
+  transition: transform 0.3s ease;/*el cambio no sera inmediat con 0.3 segundos*/
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);/*sombra debajo del elemento*/
+}
   
   .producto img {
     width: 120%;
     border-radius: 5px;
   }
-  
+  /*Boton agregr al carrito*/
   .boton {
     background-color: #d88fc7;
     color: rgb(12, 11, 11);
@@ -109,6 +118,13 @@ body, html {
     border: none;
   }
   
+/*cabio del color del boton al click del mause*/
+.boton:hover {
+  background-color: #963867;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+/*pie de página*/
   footer {
     background-color: #d88fc7;
     text-align: center;
@@ -128,6 +144,7 @@ body, html {
     text-align: center;
   }
   
+  /*Efectos de formulario*/
   .formulario-suscripcion {
     padding: 10px 20px;
     background-color: #dab3d0;
@@ -139,8 +156,7 @@ body, html {
     transition: background-color 0.3s ease;
     width: min(600px);
     margin: 0 auto;
-  
-  
+
   }
   
   .campo {
@@ -154,6 +170,7 @@ body, html {
     display:block;
   }
   
+  /*escritura en el recuadro*/
   .input-text{
     width: 95%;
     border: none;
@@ -161,11 +178,108 @@ body, html {
     border-radius: 5px;
   }
   
-  
+  /*organizacion de los espacios de la pantalla donde van los productos*/
   .servicios{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;/*hacia los costados*/
+    grid-template-rows: 1fr 1fr;/*hacia abajo*/
   }
   
+  /*Efectos Producto destaca*/
+  .destacado {
+    background-color: #fff0f6;/* Fondo de la seccion destacado*/
+    padding: 40px;/*separacion co otra seccion*/
+    text-align: center;
+  }
   
+  .destacado h2 {
+    color: #b03060;/*título*/
+    margin-bottom: 20px;/*margen entre boton y el labial*/
+  }
+  
+  /*Efectos caja del destacado*/
+  .destacado .producto {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);/*sombra de caja*/
+  }
+  
+  .destacado .producto img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .destacado .precio-original {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+  }
+  
+/*seccion testimonios*/
+  .testimonios {
+    background-color: #f9e6f0;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .testimonios h2 {
+    color: #842e6b;
+    margin-bottom: 30px;
+  }
+  
+  .contenedor-testimonios {
+    display: flex;/* Activa Flexbox para organizar los elementos hijos en fila */
+    justify-content: center;  /* Centra los elementos hijos horizontalmente en el contenedor */
+    flex-wrap: wrap;/* Permite que los elementos se envuelvan en varias líneas si no caben en una sola */
+    gap: 30px;/* Establece un espacio de 30px entre los elementos, tanto horizontal como verticalmente */
+  }
+  
+  .reseña {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-style: italic;
+  }
+  
+  /*nombre del que escribe la reseña*/
+  .reseña span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  /*línea separadora entre sección destacado y testimonio*/
+  .separador {
+    height: 2px;
+    background: linear-gradient(to right, #d88fc7, #ffffff, #d88fc7);
+    margin: 40px 0;
+  }
+
+  /*boton de descuento*/
+.descuento {
+  position: absolute;
+  background-color: #e53985;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9em;/*tamaño del botón*/
+  font-weight: bold;
+  border-radius: 5px 0 5px 0; /*diseño botón*/
+  top: 10px;
+  left: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.precio-original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
