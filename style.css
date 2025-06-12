@@ -1,5 +1,5 @@
 body, html {
-    margin: 0;
+    margin: 50px;
     padding: 0;
     background-color: #fdf8f5; /* se puede cambiar este color */
     background-image: linear-gradient(to top #DFE9F3 0%, #ffffff 100%);
@@ -95,11 +95,11 @@ body, html {
   }
 
   /*pseudoclase,(efecto de la imagen al poner el mause encima)*/
-.producto:hover {
+ .producto:hover {
   transform: scale(1.05);/*se agranda el elemento un 5% efecto zoom*/
   transition: transform 0.3s ease;/*el cambio no sera inmediat con 0.3 segundos*/
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);/*sombra debajo del elemento*/
-}
+  }
   
   .producto img {
     width: 120%;
@@ -118,12 +118,12 @@ body, html {
     border: none;
   }
   
-/*cabio del color del boton al click del mause*/
-.boton:hover {
+ /*cabio del color del boton al click del mause*/
+ .boton:hover {
   background-color: #963867;
   transform: scale(1.05);
   transition: all 0.3s ease;
-}
+ }
 
   .forulario {
     background-color: #dab3d0;
@@ -209,7 +209,7 @@ body, html {
     margin-right: 5px;
   }
   
-/*seccion testimonios*/
+ /*seccion testimonios*/
   .testimonios {
     background-color: #f9e6f0;
     padding: 40px;
@@ -253,7 +253,7 @@ body, html {
   }
 
   /*boton de descuento*/
-.descuento {
+ .descuento {
   position: absolute;
   background-color: #e53985;
   color: white;
@@ -264,20 +264,63 @@ body, html {
   top: 10px;
   left: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+ }
 
 
-.precio-original {
+ .precio-original {
   text-decoration: line-through;
   color: #999;
   font-size: 0.9em;
   margin-left: 5px;
-}
+ }
 
-/*pie de página*/
-footer {
+ /*pie de página*/
+ footer {
   background-color: #d88fc7;
   text-align: center;
   padding: 15px;
-}
+ }
   
+
+ /* Estilo general de la sección */
+ .redes.sociales {
+  background-color:#dab3d0;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(197, 41, 109, 0.1);
+ }
+
+ /* Título */
+ .redes.sociales .subtitulo h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0c0c0b;
+  text-align: left;
+
+ }
+
+ /* Contenedor de los íconos */
+ .iconos-redes{
+  margin:10px;
+  transition: transform 0.5 ease;
+  text-align: left;
+ }
+
+ /* Animación al pasar el mouse */
+ .iconos-redes a img:hover {
+  transform: scale(1.5);
+ }
+
+ /* Estilo de las imágenes de redes */
+ .iconos-redes a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #080207;
+  transition: border-color 0.3s;
+
+ }
+
+ .redes.sociales .subtitulo a:hover img {
+  border-color: #e0dfee;
+ }

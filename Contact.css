@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf8f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  nav {
+    background-color: #d88fc7;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #0f0207;
+    font-weight: bold;
+  }
+  
+  header {
+    background-color: #d88fc7;
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+  /*Sección tu mensaje fue enviado*/
+  .gracias {
+    flex: 1;
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .gracias h1 {
+    color: #b81c8c;
+    margin-bottom: 20px;
+  }
+  
+  .gracias p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .boton {
+    background-color: #d88fc7;
+    color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: #c069b3;
+    transform: scale(1.03);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d88fc7;
+    color: #000;
+  }
