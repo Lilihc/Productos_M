@@ -1,14 +1,17 @@
+<!--Estructura principal del HTML-->
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!--configuración del documento-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Brilla Bonita</title>
+    <!--Enlace al archivo de estilos Css-->
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     
-
+      <!-- Sección principal con imagen de fondo -->
     <div class="landing">
       <div class="overlay">
         <header>
@@ -17,11 +20,12 @@
             💄 Productos de maquillaje para brillar cada día 
             Tu belleza,tu vida 💖
           </p>
+          <!-- Botón que dirige a la sección de productos -->
           <a href="#productos" class="boton">Ver Productos</a>
         </header>
       </div>
     </div>
-
+    <!--Menú principal de navegación-->
     <nav>
       <ul>
         <li><a href="#">Inicio</a></li>
@@ -29,6 +33,7 @@
         <li><a href="#productos">Productos</a></li>
         <li><a href="#contacto">Contacto</a></li>
         <li>
+          <!--Icono de carrito de compras -->
         <a href="./cart.html">  
             <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,14 +54,15 @@
         </li>    
       </ul>
     </nav>
-
+      <!--Seccion de productos-->
     <section id="productos" class="productos">
       <div class="subtitulo">
         <h2>Nuestros Productos</h2> 
       </div>
       
       <div class="servicios">
-      
+
+         <!--Producto 1-->
         <div class="producto">
           <div class="descuento">20% Dcto</div>
           <a href="./Product.html" style="text-decoration: none; color: black;">
@@ -69,7 +75,8 @@
           </p>
           <button class="boton">Agregar al carrito</button>
         </div>
-      
+
+          <!--Producto 2-->
         <div class="producto">
           <div class="descuento">15% Dcto.</div>
           <a href="./Product.html" style="text-decoration: none; color: #000"></a>
@@ -81,7 +88,8 @@
           </p>
           <button class="boton">Agregar al carrito</button>
         </div>
-      
+  
+         <!--Producto 3-->
         <div class="producto">
           <a href="./Product.html" style="text-decoration: none; color: #000"></a>
           <img src="img/maktit.png" alt="Pack">
@@ -91,6 +99,7 @@
           <button class="boton">Agregar al carrito</button>
         </div>
 
+          <!--Producto 4-->
         <div class="producto">
           <a href="./Product.html" style="text-decoration: none; color: #000"></a>
           <img src="img/base.jpeg" alt="Base Maquillaje">
@@ -100,6 +109,7 @@
           <button class="boton">Agregar al carrito</button>
         </div>
 
+         <!--Producto 5-->
         <div class="producto">
           <div class="descuento">7% Dcto.</div>
           <a href="./Product.html" style="text-decoration: none; color: #000">
@@ -112,6 +122,7 @@
           <button class="boton">Agregar al carrito</button>
         </div>
 
+         <!--Producto 6-->
         <div class="producto">
           <div class="descuento">20% Dcto.</div>
           <a href="./Product.html" style="text-decoration: none; color: #000"></a>
@@ -124,6 +135,7 @@
           <button class="boton">Agregar al carrito</button>
         </div>
         
+         <!--Producto 7-->
         <div class="producto">
           <a href="./Product.html" style="text-decoration: none; color: #000">
           <img src="img/base.jpeg" alt="Base 2">
@@ -133,6 +145,7 @@
           <button class="boton">Agregar al carrito</button>
         </div>
         
+         <!--Producto 8-->
         <div class="producto">
           <div class="descuento">20% Dcto.</div>
           <a href="./Product.html" style="text-decoration: none; color: #000"></a>
@@ -145,7 +158,10 @@
       </div>
     </section>
     
+     <!--Separador visual-->
     <div class="separador"></div>
+
+     <!--Sección se producto destacado-->
     <section id="mas" class="destacado">
       <h2>⭐ Producto Estrella</h2>
       <div class="producto">
@@ -159,9 +175,10 @@
         <button class="boton">Lo quiero</button>
       </div>
     </section>
+      <!--Separador visual-->
     <div class="separador"></div>
 
-    
+      <!--Sección testimonios-->
      <section class="testimonios"><h2>Lo quedicen nuestras clientas</h2>
       <div class="contenedor-testimonios">
         <div class="reseña">
@@ -179,6 +196,7 @@
       </div>
     </section>
 
+    <!--Sección  contacto con formulario-->
   <section id="contacto">
     <div class="forulario">
       <h2>Contacto</h2>
@@ -210,6 +228,7 @@
                   <input class="boton" type="submit" value="Enviar">
               </div>
           </fieldset>
+          <!--Sección redes sociales-->
         </section>
       <section id="redes-sociales" class="redes sociales">
         <div class="subtitulo">
@@ -228,7 +247,7 @@
           </div>
       </section>
       
-
+      <!--Pie de página-->
     <footer>
         <p>&copy; 2025 Brilla Bonita. Todos los derechos reservados.</p>
           </footer>
